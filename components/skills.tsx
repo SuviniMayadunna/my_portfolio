@@ -2,6 +2,9 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { useState } from "react"
+import { FaFigma, FaPython, FaJava, FaJs, FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from "react-icons/fa"
+import { SiPostman, SiC, SiExpress, SiMongodb, SiMysql } from "react-icons/si"
+
 
 export function Skills() {
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null)
@@ -10,29 +13,31 @@ export function Skills() {
     {
       title: "Frontend",
       skills: [
-        { name: "React", icon: "⚛️", description: "Building interactive UIs" },
-        { name: "Next.js", icon: "▲", description: "Full-stack React framework" },
-        { name: "TypeScript", icon: "📘", description: "Type-safe JavaScript" },
-        { name: "Tailwind CSS", icon: "🎨", description: "Utility-first CSS framework" },
-      ],
+      { name: "React JS", icon: <FaReact className="text-sky-500" />, description: "Building interactive UIs" },
+      { name: "JavaScript", icon: <FaJs className="text-yellow-400" />, description: "Dynamic web development" },
+      { name: "HTML", icon: <FaHtml5 className="text-orange-600" />, description: "Structuring the web" },
+      { name: "CSS", icon: <FaCss3Alt className="text-blue-500" />, description: "Styling the web" },
+    ],
     },
     {
       title: "Backend",
       skills: [
-        { name: "Node.js", icon: "🟢", description: "Server-side JavaScript" },
-        { name: "Express", icon: "🚀", description: "Web application framework" },
-        { name: "PostgreSQL", icon: "🐘", description: "Relational database" },
-        { name: "MongoDB", icon: "🍃", description: "NoSQL database" },
-      ],
+      { name: "Node.js", icon: <FaNodeJs className="text-green-600" />, description: "Server-side JavaScript" },
+      { name: "Express JS", icon: <SiExpress className="text-gray-700 dark:text-white" />, description: "Web framework for Node.js" },
+      
+      { name: "Java", icon: <FaJava className="text-red-600" />, description: "Enterprise-grade applications" },
+      { name: "C", icon: <SiC className="text-blue-600" />, description: "Low-level programming" },
+    ],
     },
     {
-      title: "Tools & Others",
+      title: "Databases & Tools",
       skills: [
-        { name: "Git", icon: "📝", description: "Version control system" },
-        { name: "Docker", icon: "🐳", description: "Containerization platform" },
-        { name: "AWS", icon: "☁️", description: "Cloud computing services" },
-        { name: "Figma", icon: "🎯", description: "Design and prototyping" },
-      ],
+      { name: "MongoDB", icon: <SiMongodb className="text-green-500" />, description: "NoSQL database" },
+      { name: "MySQL", icon: <SiMysql className="text-sky-700" />, description: "Relational database" },
+      { name: "Postman", icon: <SiPostman className="text-orange-500" />, description: "API testing tool" },
+      { name: "Figma", icon: <FaFigma className="text-pink-500" />, description: "Design & prototyping" },
+
+    ],
     },
   ]
 

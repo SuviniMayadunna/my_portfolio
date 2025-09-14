@@ -9,31 +9,31 @@ export function About() {
       description: "Dedicated to creating meaningful digital experiences that solve real problems.",
     },
     {
-      icon: Coffee,
+      icon: Code2,
       title: "Always Learning",
       description: "Constantly exploring new technologies and staying updated with industry trends.",
     },
     {
-      icon: Code2,
-      title: "Problem Solver",
-      description: "Enjoy tackling complex challenges and finding elegant solutions.",
+      icon: Coffee,
+      title: "Team Player",
+      description: "Thrive in collaborative environments and adapt quickly to new roles.",
     },
   ]
 
   const education = [
     {
       icon: GraduationCap,
-      degree: "Bachelor of Computer Science",
-      institution: "University Name",
-      year: "2020-2024",
-      description: "Specialized in Software Engineering and Web Development",
+      degree: "BSc. (Hons) in Information Technology and Management",
+      institution: "University of Moratuwa",
+      year: "2023 - Present",
+      description: "Focus on software engineering, algorithms, and web development.",
     },
     {
       icon: School,
-      degree: "High School Diploma",
-      institution: "School Name",
-      year: "2018-2020",
-      description: "Mathematics and Science Focus",
+      degree: " G.C.E Advanced Level (2021) ",
+      institution: "Rathnavali Balika Vidyalaya Gampaha",
+      year: "Island Rank - 14th",
+      description: "Z-Score: 2.4343",
     },
   ]
 
