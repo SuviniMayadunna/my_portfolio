@@ -31,9 +31,9 @@ export function Hero() {
           {/* Main Content */}
           <div className="space-y-6 animate-float">
             <div className="space-y-2">
-              <p className="text-primary font-medium text-lg">Available for opportunities</p>
+              
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-balance">
-                Hey there, I'm <span className="text-primary">Your Name</span>
+                Hey there,<br/> I'm <span className="text-primary">Suvini Mayadunna</span>
               </h1>
             </div>
 
@@ -45,19 +45,23 @@ export function Hero() {
               >
                 View My Work
               </Button>
+              <a href="/myCV.pdf" download={true}>
               <Button
+              
                 variant="outline"
+                
                 size="lg"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 text-lg bg-transparent"
               >
-                Download Resume
+                Download CV
               </Button>
+              </a>
             </div>
 
             {/* Social Links */}
             <div className="flex items-center justify-center gap-6 pt-8">
               <a
-                href="https://github.com"
+                href="https://github.com/SuviniMayadunna"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -65,7 +69,7 @@ export function Hero() {
                 <Github size={24} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/suvini-mayadunna-79a5382a7/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -73,7 +77,7 @@ export function Hero() {
                 <Linkedin size={24} />
               </a>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:suvijanadi@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail size={24} />
