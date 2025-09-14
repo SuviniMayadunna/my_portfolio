@@ -43,7 +43,8 @@ export function About() {
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
           <p className="text-lg text-muted-foreground text-balance">
-            I'm a passionate developer with a love for creating digital experiences that make a difference. With
+            I am an IT undergraduate with a strong interest in software engineering and a focus on creating reliable, user-centered solutions.
+            I am a passionate developer with a love for creating digital experiences that make a difference. With
             expertise in modern web technologies, I bring ideas to life through clean code and thoughtful design.
           </p>
         </div>
@@ -52,18 +53,23 @@ export function About() {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-primary">My Journey</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Started my journey in web development 3 years ago, I've been constantly learning and evolving with the
-              ever-changing landscape of technology. From front-end frameworks to back-end architectures, I enjoy the
-              challenge of building complete solutions.
+             My journey in technology began with curiosity—how software and innovation can solve everyday problems.
+              Starting with a strong academic foundation and a top-ranking G.C.E. A/L result, I pursued my degree at the University of Moratuwa, 
+              where I explored both software and hardware projects.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or
-              sharing knowledge with the developer community.
+           From automating acid dilution in a hardware project to developing full-stack
+               web applications like EduNotes and a scalable Salon Management System, I have gained hands-on experience across diverse domains. 
+               Leading the admin module of the Salon Management System strengthened my skills in governance, payments, analytics, and team collaboration.
+                My internship at Peoples Bank and involvement in university marketing initiatives further sharpened my adaptability
+                 and communication skills. Each step has shaped me into a developer who thrives on learning continuously, tackling challenges
+                  and creating impactful, user-focused solutions.
             </p>
           </div>
 
           <div className="flex justify-center">
-            <img src="/developer-workspace.png" alt="Developer workspace" className="rounded-lg shadow-lg" />
+            <img alt="Coding" width="400" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/601014116770475.6068beff4640a.gif"/>
+            
           </div>
         </div>
 

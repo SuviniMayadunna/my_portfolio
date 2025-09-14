@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, MapPin, Phone } from "lucide-react"
+import emailjs from "@emailjs/browser"  
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -16,10 +17,34 @@ export function Contact() {
     message: "",
   })
 
+  const [status, setStatus] = useState("")
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
+
+    setStatus("Sending...")
+
+    emailjs
+      .send(
+        "service_hcv2q0g", 
+        "template_jpw2e11",
+        {
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        "TufoY-o1CxLJs0sE6"
+      )
+      .then(
+        () => {
+          setStatus("✅ Message sent successfully!")
+          setFormData({ email: "", subject: "", message: "" })
+        },
+        (error) => {
+          console.error("EmailJS Error:", error)
+          setStatus("❌ Failed to send. Please try again.")
+        }
+      )
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -33,20 +58,20 @@ export function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com",
+      value: "suvijanadi@gmail.com",
+      href: "mailto:suvijanadi@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "(+94)762366618",
+      href: "tel:(+94)762366618",
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "Your City, Country",
-      href: "#",
+      value: "Gampaha, Sri Lanka",
+      href: "https://www.google.com/maps/place/Gampaha/@7.0814648,79.9917135,14z/data=!3m1!4b1!4m6!3m5!1s0x3ae2fb67a22e72d9:0x913a2c56a49c8d8e!8m2!3d7.0915358!4d79.9947762!16zL20vMDk2M2o1?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D",
     },
   ]
 
