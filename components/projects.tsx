@@ -31,6 +31,15 @@ export function Projects() {
       liveUrl: "#",
       githubUrl: "https://github.com/SuviniMayadunna/to-do",
     },
+    {
+      title: "Sales Order Management System",
+      description:
+        "A comprehensive order management solution that streamlines sales operations with accurate calculations, real-time updates, secure data protection, and an intuitive interface for efficient business workflows.",
+      image: "/salesorder.png",
+      tech: [".NET", "React.js", "SQLite", "Modern CSS"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/SuviniMayadunna/sales-order-app",
+    },
   ]
 
   return (
