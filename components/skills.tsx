@@ -2,8 +2,8 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { useState } from "react"
-import { FaFigma, FaPython, FaJava, FaJs, FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from "react-icons/fa"
-import { SiPostman, SiC, SiExpress, SiMongodb, SiMysql } from "react-icons/si"
+import { FaFigma, FaPython, FaJs, FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from "react-icons/fa"
+import { SiPostman, SiC, SiExpress, SiMongodb, SiMysql, SiDotnet, SiPostgresql } from "react-icons/si"
 
 
 export function Skills() {
@@ -24,8 +24,8 @@ export function Skills() {
       skills: [
       { name: "Node.js", icon: <FaNodeJs className="text-green-600" />, description: "Server-side JavaScript" },
       { name: "Express JS", icon: <SiExpress className="text-gray-700 dark:text-white" />, description: "Web framework for Node.js" },
-      
-      { name: "Java", icon: <FaJava className="text-red-600" />, description: "Enterprise-grade applications" },
+      { name: "Python", icon: <FaPython className="text-blue-500" />, description: "Versatile programming language" },
+      { name: ".NET", icon: <SiDotnet className="text-purple-600" />, description: "Enterprise application framework" },
       { name: "C", icon: <SiC className="text-blue-600" />, description: "Low-level programming" },
     ],
     },
@@ -34,6 +34,7 @@ export function Skills() {
       skills: [
       { name: "MongoDB", icon: <SiMongodb className="text-green-500" />, description: "NoSQL database" },
       { name: "MySQL", icon: <SiMysql className="text-sky-700" />, description: "Relational database" },
+      { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-600" />, description: "Advanced relational database" },
       { name: "Postman", icon: <SiPostman className="text-orange-500" />, description: "API testing tool" },
       { name: "Figma", icon: <FaFigma className="text-pink-500" />, description: "Design & prototyping" },
 

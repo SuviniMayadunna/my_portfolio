@@ -40,6 +40,24 @@ export function Projects() {
       liveUrl: "#",
       githubUrl: "https://github.com/SuviniMayadunna/sales-order-app",
     },
+    {
+      title: "Automobile Service Time Logging & Appointment System",
+      description:
+        "A comprehensive enterprise application to digitalize automobile service management, featuring service time logging, appointment updates, and workload management for efficient operations.",
+      image: "/employee.png",
+      tech: ["Django", "Python", "React.js", "Docker", "PostgreSQL"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/ServEase-EAD",
+    },
+    {
+      title: "TicketPro",
+      description:
+        "A modern support ticket management system [Frontend] designed to help teams efficiently track and resolve customer issues with streamlined workflows and real-time collaboration features.",
+      image: "/Ticketpro.png",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/SuviniMayadunna/TicketPro",
+    },
   ]
 
   return (
